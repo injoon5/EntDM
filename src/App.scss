@@ -1,0 +1,230 @@
+:root {
+  --bg-color: #fff;
+  --text-color: #000;
+  --primary-color: #009cff;
+  --secondary-color: #009cff;
+  --entry-color: #00d169;
+}
+
+* {
+  font-family: 'Poppins', 'NanumSquare';
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 50vw;
+}
+
+button {
+  margin: .5rem;
+}
+
+.start {
+  display: inline-block;
+  border: 0;
+  padding: .3rem 1rem;
+  font-size: 1.1rem;
+  border-radius: .4rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+}
+
+.start:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(10, 132, 255, .3);
+}
+
+.login {
+  display: inline-block;
+  border: 0;
+  padding: .3rem 1rem;
+  font-size: 1.1rem;
+  border-radius: .4rem;
+  background-color: var(--entry-color);
+  color: #fff;
+  cursor: pointer;
+}
+
+.login:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(102, 233, 163, .3);
+}
+
+input {
+  border: 1px solid rgba(12, 12, 13, .3);
+  border-radius: .3rem;
+  font-size: 1rem;
+  display: inline-block;
+  padding: .5rem .7rem;
+}
+
+input:focus {
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 0 0 3px rgba(10, 132, 255, .3);
+  outline: none;
+}
+
+.test {
+  font-size: 14px;
+  z-index: 2;
+  position: fixed;
+
+  .loginBoxClose {
+    width: 14px;
+    height: 14px;
+    right: 10px;
+    display: block;
+    top: 10px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHNJREFUeNpi/P//vwADA0MBAwRMYGRk/MCABaCoA3Ia/iPAeagkhgaoHBgwockbAPF+ZI1Q9n6oHHZTkG3EJUdII1bDCNn4n5B/8WlE0cDEQAkg2XkkBwRZQY6WIjCcgU0jekBcAGJH5PQHZTtC5cAAIMAAkYWCgj8a9uYAAAAASUVORK5CYII=);
+    cursor: pointer;
+    margin-left: auto;
+    margin-top: -5px;
+    margin-right: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-weight: bold;
+    color: white;
+    font-size: 17px;
+    line-height: 1.428571429;
+  }
+
+  .loginWrapperIH {
+    top: 50%;
+    margin-bottom: 0px;
+    margin-top: -216px;
+    width: 400px;
+    position: fixed;
+    left: 50%;
+    margin-left: -200px;
+    top: 50%;
+    margin-top: -180px;
+    border: 1px solid #9e9e9f;
+    border-radius: 6px;
+
+    * {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+  }
+
+  .loginBoxTitle {
+    background: #2a7def;
+    height: 60px;
+    padding: 18px 0 0 29px;
+    font-family: 'NanumSquare';
+    font-weight: bold;
+    color: white;
+    font-size: 17px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    line-height: 1.428571429;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .loginBoxContent {
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .loginBoxFormWrapper {
+    padding: 20px 42px 36px;
+  }
+
+  .loginBoxSpan {
+    display: block;
+    color: #3b3b3b;
+    font-family: 'NanumSquare';
+    font-size: 16px;
+  }
+
+  .loginBoxInput {
+    width: 100%;
+    margin-top: 3px;
+    border: 2px solid #d8d8d8;
+    border-radius: 5px;
+    padding-left: 9px;
+    height: 35px;
+    background-color: white;
+  }
+
+  .loginBoxRemember {
+    margin-top: 20px;
+  }
+
+  .loginBoxConfirm {
+    width: 102px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    background-color: #6e5ae6;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+
+  .eee {
+    margin-left: 10px;
+  }
+
+  .eeeeee {
+    margin-top: 1rem;
+  }
+}
+
+.dim {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  min-width: 1024px;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+  overflow: auto;
+}
+
+.logout {
+  display: inline-block;
+  border: 0;
+  padding: .3rem 1rem;
+  font-size: 1.1rem;
+  border-radius: .4rem;
+  background-color: #e73939;
+  color: #fff;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.logout:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(233, 102, 102, 0.3);
+}
+
+#message {
+  width: 100%;
+}

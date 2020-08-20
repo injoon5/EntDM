@@ -1,0 +1,12 @@
+ul {
+  list-style-type: none;
+}
+
+#chatList #chat {
+  display: flex;
+}
+
+#chatList .name {
+  font-weight: bold;
+  margin-right: .5rem;
+}

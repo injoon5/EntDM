@@ -1,0 +1,13 @@
+.nav {
+  user-select: none;
+  margin-top: .5rem;
+  display: flex;
+  align-items: baseline;
+  h1 {
+    font-weight: 700;
+  }
+  h3 {
+    margin-left: .5rem;
+    font-weight: 600;
+  }
+}
