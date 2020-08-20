@@ -8,7 +8,7 @@ import Login from './pages/Login';
 class Routes extends React.Component {
   render() {
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route exact path="/" component={Main}></Route>
           <Route exact path="/chat" component={Chat}></Route>
