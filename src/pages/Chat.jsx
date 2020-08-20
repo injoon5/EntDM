@@ -35,7 +35,7 @@ class Chat extends React.Component {
         message: this.state.text,
       };
       axios
-        .post('http://localhost:9999/message', payload)
+        .post('http://150.136.22.110:9999/message', payload)
         .then(() => this.setState({ text: '' }));
     } else {
       this.setState({ text: e.target.value });

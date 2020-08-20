@@ -13,7 +13,7 @@ class Login extends React.Component<{}, { username: any; password: any }> {
     const { username, password } = this.state;
     axios
       .get(
-        `http://localhost:9999/login?username=${username}&password=${password}`
+        `http://150.136.22.110:9999/login?username=${username}&password=${password}`
       )
       .then((res) => res.data)
       .then((data) => {
